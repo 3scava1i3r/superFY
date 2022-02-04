@@ -11,6 +11,7 @@ import Chains from "components/Chains";
 import TokenPrice from "components/TokenPrice";
 import ERC20Balance from "components/ERC20Balance";
 import ERC20Transfers from "components/ERC20Transfers";
+import FixedYield from "components/FixedYield";
 import DEX from "components/DEX";
 import NFTBalance from "components/NFTBalance";
 import Wallet from "components/Wallet";
@@ -111,6 +112,9 @@ const App = ({ isServerInfo }) => {
             </Route>
             <Route path="/onramp">
               <Ramper />
+            </Route>
+            <Route path="/superFY">
+              <FixedYield />
             </Route>
             <Route path="/erc20transfers">
               <ERC20Transfers />
